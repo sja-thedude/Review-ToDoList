@@ -8,7 +8,7 @@ let dataList = [];
 let i = 0;
 dataList.map((dataList, index) => {
   dataList[i].index = i + i;
-  return dataList; 
+return dataList; 
 });
 
 const saveToLocalStorage = (dataList) => {
@@ -65,21 +65,21 @@ const component = () => {
     saveToLocalStorage(dataList);
     refreshPage();
   });
-  
-  
-const checkBox = (checkbox, todo, dataList, saveToLocalStorage, refreshPage) => {
-  checkbox.addEventListener('change', () => {
-    if (checkbox.checked) {
-      todo.completed = true;
-      saveToLocalStorage(dataList);
-      refreshPage();
-    } else {
-      todo.completed = false;
-      saveToLocalStorage(dataList);
-      refreshPage();
-    }
-  });
-};
+
+
+  const checkBox = (checkbox, todo, dataList, saveToLocalStorage, refreshPage) => {
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) {
+        todo.completed = true;
+        saveToLocalStorage(dataList);
+        refreshPage();
+      } else {
+        todo.completed = false;
+        saveToLocalStorage(dataList);
+        refreshPage();
+      }
+    });
+  };
 
   if (dataList.length !== 0) {
     dataList.forEach((todo) => {
