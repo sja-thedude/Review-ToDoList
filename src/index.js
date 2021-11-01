@@ -6,7 +6,7 @@ import './style.css';
 
 let dataList = [];
 const i = 0;
-dataList.map((dataList, index) => {
+dataList.map((dataList) => {
   dataList[i].index = i + i;
   return dataList;
 });
@@ -111,7 +111,7 @@ const component = () => {
 
   listUpdate(dataList, saveToLocalStorage, refreshPage);
 
-  itemDelete(dataList, index, saveToLocalStorage, refreshPage);
+  itemDelete(dataList, saveToLocalStorage, refreshPage);
 
   element = document.createElement('li');
 
@@ -121,7 +121,7 @@ const component = () => {
   element.appendChild(clearCompleted);
   todoContainer.appendChild(element);
 
-  clearAllComp(clearCompleted, dataList, index, saveToLocalStorage, refreshPage);
+  clearAllComp(clearCompleted, dataList, saveToLocalStorage, refreshPage);
 };
 
 const pageLoad = () => {
