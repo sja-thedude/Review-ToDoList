@@ -6,13 +6,10 @@ import './style.css';
 
 let dataList = [];
 
-const index = (dataList) => {
-  for (let i = 0; i < dataList.length; i++) { /* eslint-disable-line no-plusplus */
-    dataList[i].index = i + i;
-  }
-
-  return dataList;
-};
+dataList.map((dataList, index) => {
+  dataList[i].index = i + i;
+  return dataList; 
+});
 
 const saveToLocalStorage = (dataList) => {
   localStorage.setItem('todo_list', JSON.stringify(dataList));
