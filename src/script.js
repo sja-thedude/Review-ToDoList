@@ -7,7 +7,3 @@ export const isComp = (complete, description) => {
     description.style.color = '#000';
   }
 };
-
-export const checkBox = (checkbox, todo, dataList, saveToLocalStorage, refreshPage) => {
-  
-};
