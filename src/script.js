@@ -1,4 +1,4 @@
-/* disable eslint */
+/* eslint-disable */
 export const isComp = (complete, description) => {
   if (complete) {
     description.style.textDecoration = 'line-through';
