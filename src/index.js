@@ -23,16 +23,18 @@ const refreshPage = () => {
 };
 
 const component = () => {
-  const todoContainer = document.querySelector('.todo-list-con');
+  const todoContainer, heading, clear, btn, addItem;
+  
+  todoContainer = document.querySelector('.todo-list-con');
   let element = document.createElement('li');
   element.className = 'todo-item';
 
-  const heading = document.createElement('h2');
+  heading = document.createElement('h2');
   heading.className = 'heading';
   heading.textContent = 'Today\'s To Do';
   element.appendChild(heading);
 
-  const clear = document.createElement('button');
+  clear = document.createElement('button');
   clear.className = 'clear';
   clear.innerHTML = '<i class=\'sync alternate icon\'></i>';
   element.appendChild(clear);
@@ -43,13 +45,13 @@ const component = () => {
   element = document.createElement('li');
   element.className = 'todo-item';
 
-  const addItem = document.createElement('input');
+  addItem = document.createElement('input');
   addItem.className = 'add-item';
   addItem.placeholder = 'Add to your list';
   addItem.value = '';
   element.appendChild(addItem);
 
-  const btn = document.createElement('button');
+  btn = document.createElement('button');
   btn.className = 'enter-button';
   btn.innerHTML = '<i class=\'level down alternate icon\'></i>';
   element.appendChild(btn);
