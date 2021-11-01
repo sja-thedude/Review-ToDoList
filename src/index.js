@@ -5,7 +5,7 @@ import {
 import './style.css';
 
 let dataList = [];
-
+let i = 0;
 dataList.map((dataList, index) => {
   dataList[i].index = i + i;
   return dataList; 
