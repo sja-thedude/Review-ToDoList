@@ -5,10 +5,10 @@ import {
 import './style.css';
 
 let dataList = [];
-let i = 0;
+const i = 0;
 dataList.map((dataList, index) => {
   dataList[i].index = i + i;
-return dataList; 
+  return dataList;
 });
 
 const saveToLocalStorage = (dataList) => {
@@ -65,7 +65,6 @@ const component = () => {
     saveToLocalStorage(dataList);
     refreshPage();
   });
-
 
   const checkBox = (checkbox, todo, dataList, saveToLocalStorage, refreshPage) => {
     checkbox.addEventListener('change', () => {
