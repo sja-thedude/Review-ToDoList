@@ -69,7 +69,7 @@ const component = () => {
   });
   
   
-checkBox = (checkbox, todo, dataList, saveToLocalStorage, refreshPage) => {
+export const checkBox = (checkbox, todo, dataList, saveToLocalStorage, refreshPage) => {
   checkbox.addEventListener('change', () => {
     if (checkbox.checked) {
       todo.completed = true;
