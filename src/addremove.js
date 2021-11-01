@@ -1,4 +1,4 @@
-export const addToDo = (input, dataList=dataList.length+1, completed=false){
+export const addToDo = (input, dataList=dataList.length+1, completed=false);{
 const dataObj = {
 index: dataList,
 description: input,
