@@ -1,4 +1,5 @@
-import const isComp = (complete, description) => {
+/* disable eslint */
+export const isComp = (complete, description) => {
   if (complete) {
     description.style.textDecoration = 'line-through';
     description.style.color = '#414141';
