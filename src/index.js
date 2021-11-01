@@ -19,9 +19,13 @@ const refreshPage = () => {
   window.location.reload();
 };
 
+const todoContainer;
+const heading;
+const clear;
+const btn;
+const addItem;
+
 const component = () => {
-  const todoContainer, heading, clear, btn, addItem;
-  
   todoContainer = document.querySelector('.todo-list-con');
   let element = document.createElement('li');
   element.className = 'todo-item';
