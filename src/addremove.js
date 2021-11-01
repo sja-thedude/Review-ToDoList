@@ -1,10 +1,12 @@
-export const addToDo = (input, dataList=dataList.length+1, completed=false);{
-const dataObj = {
-index: dataList,
-description: input,
-completed: completed
-}
-dataList.push(dataObj)
+export const addToDo = (input, dataList) => {
+  const dataObj = {
+    index: dataList.length + 1,
+    description: '',
+    completed: false,
+  };
+
+  dataObj.description = input;
+  dataList.push(dataObj);
 };
 
 export const capitalize = (value) => value.toLowerCase().charAt(0).toUpperCase() + value.slice(1);
